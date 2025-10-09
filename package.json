@@ -1,0 +1,16 @@
+{
+  "name": "@panprogramadorgh/worker-pool",
+  "version": "1.0.0",
+  "main": "index.js",
+  "workspaces": [
+    "src",
+    "tests"
+  ],
+  "scripts": {
+    "test": "npm run test -w tests"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
