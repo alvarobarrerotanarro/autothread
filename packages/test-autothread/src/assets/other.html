@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Autothread in browser</title>
+</head>
+
+<body>
+  <h1>Main thread</h1>
+  <p>Los navegadores hacen lo posible por renderizar graficos en el DOM y no dañar la experiencia de usuario.</p>
+  <p>Sin embargo; cuando el main thread esta bloqueado por trabajo pesado, los eventos dejan de responder.</p>
+
+  <button id="btn">Click</button>
+  <button id="other-btn">Prueba</button>
+
+  <script>
+    function fibonacci(n) {
+      if (n < 2)
+        return n;
+      return fibonacci(n - 1) + fibonacci(n - 2);
+    }
+
+    function handleClick() {
+      for (let i = 0; i < 10; i++) {
+        const res = fibonacci(40);
+        console.log(res);
+      }
+    }
+    document.querySelector("#btn").addEventListener("click", handleClick);
+    document.querySelector("#other-btn").addEventListener("click", () => {
+      window.alert("Prueba");
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+{
+  "private": true,
+  "scripts": {
+    "server:build": "npx tsc -b .",
+    "server:start": "node ./dist/server.js",
+    "client:build": "node ./build-client.js",
+    "clean": "rm -rf ./@types ./dist ./tsconfig.tsbuildinfo",
+    "dev": "npm run clean && npm run server:build && npm run client:build && npm run server:start"
+  },
+  "keywords": [],
+  "author": "alvarobarrerotanarro",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@alvarobarrerotanarro/autothread-config": "^1.0.0",
+    "@alvarobarrerotanarro/autothread-types": "^1.0.0",
+    "@types/express": "^5.0.5",
+    "esbuild": "^0.27.0",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@alvarobarrerotanarro/autothread": "^1.0.0",
+    "express": "^5.1.0"
+  }
+}

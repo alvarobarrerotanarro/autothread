@@ -1,16 +1,11 @@
 {
-  "name": "@panprogramadorgh/worker-pool",
-  "version": "1.0.0",
-  "main": "index.js",
+  "name": "@alvarobarrerotanarro/autothread",
   "workspaces": [
-    "src",
-    "tests"
+    "packages/*"
   ],
   "scripts": {
-    "test": "npm run test -w tests"
+    "test": "npm run test -w packages/tests"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": ""
+  "author": "alvarobarrerotanarro",
+  "license": "GPL-2.0-only"
 }

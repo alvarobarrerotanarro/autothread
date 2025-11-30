@@ -1,0 +1,11 @@
+{
+  "name": "@alvarobarrerotanarro/autothread-types",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./index.js",
+  "types": "./@types/index.d.ts",
+  "keywords": [],
+  "author": "",
+  "license": "GPL-2.0-only",
+  "type": "module"
+}

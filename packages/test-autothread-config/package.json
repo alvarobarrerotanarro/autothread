@@ -1,0 +1,15 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "npx tsc -b .",
+    "start": "node ./dist/index.js",
+    "clean": "rm -rf ./@types ./dist ./tsconfig.tsbuildinfo"
+  },
+  "author": "alvarobarrerotanarro",
+  "type": "module",
+  "devDependencies": {
+    "@alvarobarrerotanarro/autothread-config": "^1.0.0",
+    "@types/node": "^24.10.1",
+    "typescript": "^5.9.3"
+  }
+}
