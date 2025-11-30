@@ -1,3 +1,7 @@
+/**
+ * Web browser Autothread test.
+ */
+
 import { WorkerPool } from "@alvarobarrerotanarro/autothread";
 import type { DispatchRequest, FinalizedTask, Serialized } from "@alvarobarrerotanarro/autothread-types"
 

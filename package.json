@@ -4,7 +4,7 @@
     "packages/*"
   ],
   "scripts": {
-    "test": "npm run test -w packages/tests"
+    "test": "npm run test -w packages/test-autothread"
   },
   "author": "alvarobarrerotanarro",
   "license": "GPL-2.0-only"

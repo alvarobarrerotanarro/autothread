@@ -1,11 +1,13 @@
 {
   "private": true,
   "scripts": {
-    "server:build": "npx tsc -b .",
+    "build": "npx tsc -b .",
     "server:start": "node ./dist/server.js",
     "client:build": "node ./build-client.js",
     "clean": "rm -rf ./@types ./dist ./tsconfig.tsbuildinfo",
-    "dev": "npm run clean && npm run server:build && npm run client:build && npm run server:start"
+
+    "test:web": "npm run clean && npm run build && npm run client:build && npm run start",
+    "test:node": "npm run clean && npm run build && node ./dist/node.js"
   },
   "keywords": [],
   "author": "alvarobarrerotanarro",
